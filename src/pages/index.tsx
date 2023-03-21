@@ -1,6 +1,7 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import { Kreon } from 'next/font/google'
-import styles from './page.module.css'
+import styles from '@/styles/Home.module.css'
 
 const inter = Kreon({ subsets: ['latin'] })
 
@@ -179,3 +180,4 @@ export default function Home() {
     </main>
   )
 }
+
