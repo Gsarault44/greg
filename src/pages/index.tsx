@@ -46,7 +46,7 @@ export const projects = [
   {
     title: 'PetSmart Design System',
     url: 'https://www.npmjs.com/package/@petsmart-ui/sparky',
-    desc: 'The React-powered design system library for PetSmart web applications. Latest version: 0.67.0, last published: 10 days ago. Start using @petsmart-ui/sparky in your project by running `npm i @petsmart-ui/sparky`. There are no other projects in the npm registry using @petsmart-ui/sparky.',
+    desc: 'The React-powered design system library for PetSmart web applications.',
   },
   {
     title: 'Ulta’s Design System',
@@ -106,17 +106,12 @@ export const projects = [
   {
     title: 'Institute for Advanced Study',
     url: 'https://www.ias.edu/',
-    desc: 'The Institute for Advanced Study is one of the world’s foremost centers for theoretical research and intellectual inquiry. Located in Princeton, NJ, IAS is dedicated to independent study across the sciences and humanities.',
+    desc: 'The Institute for Advanced Study is one of the world’s foremost centers for theoretical research and intellectual inquiry.',
   },
   {
     title: 'Pennsylvania Academy of the Fine Arts',
     url: 'https://www.pafa.org/museum/visit/planning-your-visit',
-    desc: 'We’re so excited you’re planning to visit PAFA! After reviewing the information below,  Reserve Tickets here. If you have additional questions about how to navigate your visit that are not answered here, please don’t hesitate to reach out to us at info@pafa.org with specific questions. We’d love to answer them!',
-  },
-  {
-    title: 'Lapham’s Quarterly',
-    url: 'https://www.laphamsquarterly.org/',
-    desc: 'Freedom',
+    desc: 'We’re so excited you’re planning to visit PAFA!',
   },
   {
     title: 'The Franklin Institute',
@@ -129,6 +124,11 @@ export const projects = [
     desc: 'Leap into Science is a national program that integrates open-ended science activities with children’s books for young children and their families.',
   },
   {
+    title: 'Lapham’s Quarterly',
+    url: 'https://www.laphamsquarterly.org/',
+    desc: 'Freedom',
+  },
+  {
     title: 'Advisor Innovation Labs',
     url: 'https://advisorinnovationlabs.com/',
     desc: 'Advisors / Clients / Data unified into a singular cloud ecosystem.',
@@ -136,59 +136,44 @@ export const projects = [
 ];
 
 export default function Home() {
-  // const [articles, setArticles] = useState([]);
-  // const getArticles = async () => {
-  //   const response = await fetch(
-  //     `/api/sites`
-  //   );
-  //   const articles = await response.json();
-  //   console.log(response);
-  //   if (articles && articles.length > 0) {
-  //     setArticles(articles);
-  //   } else if (status == 'error') {
-  //     console.error('error');
-  //   }
-  // }
-  // useEffect(() => {
-  //   getArticles();
-  // }, []);
   const [showImage1, setShowImage1] = useState(true);
 
   useEffect(() => {
     function handleScroll() {
       const halfwayPoint = window.innerHeight / 2;
-      const container = document.getElementById('container');
-      const containerTop = container!.getBoundingClientRect().top;
-      console.log(halfwayPoint, containerTop)
-      if (window.scrollY < halfwayPoint) {
+      if (window.scrollY > halfwayPoint) {
         setShowImage1(false);
       } else {
         setShowImage1(true);
       }
     }
-    console.log(window.scrollY)
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const imageclass1 = classnames('greg', {
-    'show': showImage1
+    'show': showImage1,
+    'hide': !showImage1
   });
   const imageclass2 = classnames('greg', {
-    'show': !showImage1
+    'show': !showImage1,
+    'hide': showImage1
   });
+
+  console.log("Hiring me will be the best decision you've made.")
+
   return (
-    <main className={styles.main}>
-      <div className={inter.className} id="container">
+    <main className={`${styles.main} ${inter.className}`}>
+      <div className={'container'} id="container">
         <div className={styles.description}>
-          <h1 className={inter.className}>I’m Greg Sarault, Front End Web Devloper</h1>
+          <h1 className={inter.className}>I’m Greg Sarault, Front End Web Developer</h1>
           <h2 className={inter.className}>As an experienced developer with unparalleled speed and debugging abilities, I am constantly improving my craft and surroundings.</h2>
         </div>
         
-        <div>
+        <div className={styles.description}>
           <h3>Little bit about me</h3>
-          <p></p>
+          <p>With experience spanning SAAS-based companies and agencies, I have developed a well-rounded understanding of various architectures. Passionate about highly technical conversations, I am always eager to participate in live coding sessions.</p>
         </div>
         <div className={styles.intro}>
           <h3>{`Check out what I've done`}</h3>
@@ -219,8 +204,8 @@ export default function Home() {
       <div>
         {//eslint-disable-next-line @next/next/no-img-element
         }
-        <img src="/greg-face.png" alt="greg" className={imageclass1} />
-        <img src="/greg-face-2.png" alt="greg" className={imageclass2} />
+        <img src="/greg-face-2.png" alt="greg" className={imageclass1} />
+        <img src="/greg-face.png" alt="greg" className={imageclass2} />
       </div>
     </main>
   )
