@@ -11,127 +11,236 @@ export const projects = [
   {
     title: 'Point72',
     url: 'https://point72.com',
-    desc: 'Point72 is a global asset manager led by Steven A. Cohen that deploys discretionary long/short equity, systematic, and macro investing strategies, alongside a growing portfolio of private market investments',
+    desc: 'Worked very closely with Designer, Project manager, and Client to fine tune animations and site tone and feel.',
+    tags: [
+      {label: 'Wordpress' },
+      {label: 'Twig' },
+      {label: 'Multisite' },
+      {label: 'Kinsta' },
+    ],
   },
   {
     title: 'Ventures',
     url: 'https://p72.vc/',
-    desc: 'Backed by Steven A. Cohen, our venture capital investing firm backs fintech, artificial intelligence and enterprise startups from seed stage to IPO.',
+    desc: 'Extensive training with client teaching them a little bit about code the help their editors with making their site unique.',
+    tags: [
+      {label: 'Wordpress' },
+      {label: 'Twig' },
+      {label: 'Multisite' },
+      {label: 'Kinsta' },
+    ],
   },
   {
     title: 'Hyperscale',
     url: 'https://point72hyperscale.com/',
-    desc: 'Augmenting businesses for the next economic revolution',
+    desc: 'Quickly put this site together, with the help of awesome design team.',
+    tags: [
+      {label: 'Wordpress' },
+      {label: 'Twig' },
+      {label: 'Multisite' },
+      {label: 'Kinsta' },
+    ],
   },
   {
     title: 'Producers Guild of America',
     url: 'https://producersguild.org/',
-    desc: 'The Producers Guild of America represents, protects and promotes the interests of all members of the producing team in film, television and new media.',
+    desc: 'Built a Custom integration with salesforce using a url that sends a cookie back to the site allowing members to view protected pages.',
+    tags: [
+      {label: 'Wordpress' },
+      {label: 'Twig' },
+    ],
   },
   {
     title: 'Twilio',
     url: 'https://www.twilio.com/',
-    desc: 'Create an indispensable brand using real-time customer data to power personalized communications and innovation at scale.',
+    desc: 'Learned Python/wagtail in 2 months and worked with an external team to integrate into their system.',
+    tags: [
+      {label: 'Wagtail' },
+      {label: 'Python' },
+    ],
   },
   {
     title: 'Gallagher Design',
     url: 'https://gallagherdesign.com/',
-    desc: 'We design beloved impactful visitor experiences.',
+    desc: 'Had constant comunication with design to hone in the timing and easing of the aniamtions of this site.',
+    tags: [
+      {label: 'Wordpress' },
+      {label: 'Twig' },
+      {label: 'Animations' },
+    ],
   },
   {
     title: 'Ryan Gootee General Contractors',
     url: 'https://rggc.com/',
-    desc: 'Ryan Gootee General Contractors is an award winning commercial general contractor serving the Greater New Orleans area, with a specialty in historic restoration, renovation, and new construction.',
+    desc: 'Using the templeting language twig, I was able to get this site up in under 2 months.',
+    tags: [
+      {label: 'Wordpress' },
+      {label: 'Twig' },
+    ],
   },
   {
     title: 'PetSmart Design System',
     url: 'https://www.npmjs.com/package/@petsmart-ui/sparky',
-    desc: 'The React-powered design system library for PetSmart web applications.',
+    desc: 'A very ARIA accessable design system tested though cromatic and sotrybook interactive testing.',
+    tags: [
+      {label: 'Storybook' },
+      {label: 'Design System' },
+      {label: 'React' },
+    ],
   },
   {
     title: 'Ulta’s Design System',
     url: 'https://www.ulta.com/',
-    desc: 'Shop top beauty brands & new arrivals at Ulta Beauty.',
+    desc: 'In 3 months got the Ulta Design team and the development have more conversations with eachother to help enhacnce their desing system',
+    tags: [
+      {label: 'Storybook' },
+      {label: 'Design System' },
+      {label: 'React' },
+    ],
   },
   {
     title: 'Pendo Design System',
     url: 'https://www.pendo.io/',
-    desc: 'Pendo’s product experience and digital adoption solutions help companies become product led and deliver digital experiences users love.',
+    desc: 'I did live coding QA sessions with designers and client to help get this design system over the last hurdle.',
+    tags: [
+      {label: 'Fractle' },
+      {label: 'Design System' },
+      {label: 'React' },
+    ],
   },
   {
     title: 'Elevation Oncology',
     url: 'https://elevationoncology.com/',
-    desc: 'We are focused on discovering and developing selective cancer therapies to treat patients across a range of solid tumors with significant unmet medical needs.',
+    desc: 'Created subtle animations and a custom vertical carousel that progresses based off the timestamps in the background video ( its on the /our-focus/ page',
+    tags: [
+      {label: 'Wordpress' },
+      {label: 'WPEngine' },
+      {label: 'Animations' },
+    ],
   },
   {
     title: 'Pixelingo',
     url: 'https://pixelingo.com/',
-    desc: 'I work with words and ideas. I help people make decisions about their work, then I help make their plans happen.',
-  },
-  {
-    title: 'Museum of the American Revolution',
-    url: 'https://www.amrevmuseum.org/',
-    desc: 'Located in the heart of Historic Philadelphia, the Museum explores the dramatic, surprising story of the American Revolution and its enduring legacy.',
+    desc: 'Early in my career I spun up a single page with custom nav bar associated with scroll position in under a week.',
+    tags: [
+      {label: 'HTML' },
+      {label: 'CSS' },
+      {label: 'Javascript' },
+    ],
   },
   {
     title: 'Longwood Gardens',
     url: 'https://longwoodgardens.org/',
-    desc: 'Experience the world of Longwood Gardens… a place to see dazzling displays that elevate the art of horticulture...',
+    desc: 'Built a custom interactive map with hotspots.',
+    tags: [
+      {label: 'Drupal' },
+      {label: 'Pantheon' },
+      {label: 'Javascript' },
+    ],
   },
   {
     title: 'Haruki Murakami',
     url: 'https://www.harukimurakami.com/',
-    desc: 'The official US site of Haruki Murakami. Enter Murakami’s world to explore the books, read interviews, discover music, browse image galleries, and much more.',
+    desc: 'I had fun building the animations with greensock and angular for the page state transtions.',
+    tags: [
+      {label: 'Wordpress' },
+      {label: 'Angular' },
+      {label: 'Greensock - Animations' },
+    ],
   },
   {
     title: 'Oceana',
     url: 'https://oceana.org/',
-    desc: 'SAVE THE OCEANS, FEED THE WORLD.',
+    desc: 'This was a huge site that we had to build custome content and styles based on the end users region.',
+    tags: [
+      {label: 'Wordpress' },
+      {label: 'Javascript' },
+    ],
   },
   {
     title: 'The Franklin Institute - The Current',
     url: 'https://www.fi.edu/blog',
-    desc: 'Blog landing page',
+    desc: 'While working full time worked with another agency to spin up a blog site.',
+    tags: [
+      { label: 'Drupal' },
+      { label: 'Pantheon' },
+      { label: 'Freelance one the side' },
+    ],
   },
   {
     title: 'TechCrunch',
     url: 'https://techcrunch.com/',
-    desc: 'TechCrunch | Reporting on the business of technology, startups, venture capital funding, and Silicon Valley',
+    desc: 'Worked with Brad Frost in the early stages of Design Systems while making this site',
+    tags: [
+      { label: 'Wordpress' },
+      { label: 'Design System' },
+    ],
   },
   {
     title: 'Longwood Gardens - New Heights',
     url: 'https://newheights.longwoodgardens.org',
-    desc: 'Longwood Garden’s Main Fountain Garden is a modern masterpiece. Follow the revitalization of this beloved garden’s architecture, garden design, and fountains.',
+    desc: 'We used so much Javascript in this site for the responsive interactive hotspots on the map, and story telling line drawing when scrolling down the page.',
+    tags: [
+      { label: 'Static Site' },
+      { label: 'Angular' },
+      { label: 'Greensock Animations' },
+    ],
   },
   {
     title: 'Institute for Advanced Study',
     url: 'https://www.ias.edu/',
-    desc: 'The Institute for Advanced Study is one of the world’s foremost centers for theoretical research and intellectual inquiry.',
+    desc: 'Created different sub sites for each of the clients departments but using similar design and code.',
+    tags: [
+      { label: 'Drupal' },
+      { label: 'Javascript' },
+    ],
   },
   {
     title: 'Pennsylvania Academy of the Fine Arts',
     url: 'https://www.pafa.org/museum/visit/planning-your-visit',
-    desc: 'We’re so excited you’re planning to visit PAFA!',
+    desc: 'I worked very closely with the designers to make this pixel perfect.',
+    tags: [
+      { label: 'Drupal' },
+      { label: 'Pantheon' },
+      { label: 'Javascript' },
+    ],
   },
   {
     title: 'The Franklin Institute',
     url: 'https://www.fi.edu/',
-    desc: 'World premiere exhibition immerses guests in the beloved stories that have been dazzling fans since 1923!',
+    desc: 'This is the very first site I have built at an agency and is still up today!',
+    tags: [
+      { label: 'Drupal' },
+      { label: '1st Site Built' },
+    ],
   },
   {
     title: 'The Franklin Institute - Leap into Science',
     url: 'http://leap.fi.edu/',
-    desc: 'Leap into Science is a national program that integrates open-ended science activities with children’s books for young children and their families.',
+    desc: 'While full time I worked with another agency to and their client to develop a resouece protal.',
+    tags: [
+      { label: 'Drupal' },
+      { label: 'Feelance on the side' },
+    ],
   },
   {
     title: 'Lapham’s Quarterly',
     url: 'https://www.laphamsquarterly.org/',
-    desc: 'Freedom',
+    desc: 'Created fun micro animaions, and gave the client the ability to create custom theming per issue they released.',
+    tags: [
+      { label: 'Drupal' },
+      { label: 'React' },
+      { label: 'Custom theming' },
+    ],
   },
   {
     title: 'Advisor Innovation Labs',
     url: 'https://advisorinnovationlabs.com/',
-    desc: 'Advisors / Clients / Data unified into a singular cloud ecosystem.',
+    desc: 'While at this small start up I quickly designed in code and spun this site up in under a week.',
+    tags: [
+      { label: 'Express' },
+      { label: 'Built in 2 days' },
+    ],
   },  
 ];
 
@@ -167,8 +276,13 @@ export default function Home() {
     <main className={`${styles.main} ${inter.className}`}>
       <div className={'container'} id="container">
         <div className={styles.description}>
-          <h1 className={inter.className}>I’m Greg Sarault, Front End Web Developer</h1>
-          <h2 className={inter.className}>As an experienced developer with unparalleled speed and debugging abilities, I am constantly improving my craft and surroundings.</h2>
+          <h1 className={inter.className}>I’m Greg Sarault, a Front End Engineer that dosen’t over-engineer things.</h1>
+          <h2 className={inter.className}>As an experienced developer with unparalleled speed and debugging abilities, I’ve been working as a dev for 10+ years and im faster then anyone you have worked with. I am constantly improving my craft and surroundings while making everyone better around me.</h2>
+        </div>
+        <div>
+          <blockquote>
+            <p></p>
+          </blockquote>
         </div>
         
         <div className={styles.description}>
@@ -191,7 +305,13 @@ export default function Home() {
                   <h2 className={inter.className}>
                     {item.title}
                   </h2>
-                  
+                  <div className={styles.tags}>
+                    {item.tags.map((tag, index) =>{
+                      return (
+                        <span className={styles.tag} key={index}>{tag.label}</span>
+                      )
+                    })}
+                  </div>
                   <p className={inter.className}>
                     {item.desc}
                   </p>

@@ -157,17 +157,18 @@
   background: var(--tile-border);
 }
 
-/* Inner Square */
-.thirteen::after {
-  inset: 0;
-  padding: 1px;
+.tags {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  padding: 0.25rem 0.4rem;
+  background-color: rgba(var(--callout-rgb), 0.3);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.1);
   border-radius: var(--border-radius);
-  background: linear-gradient(
-    to bottom right,
-    rgba(var(--tile-start-rgb), 1),
-    rgba(var(--tile-end-rgb), 1)
-  );
-  background-clip: content-box;
+  margin-right: 0.25rem;
 }
 
 /* Enable hover only on non-touch devices */
