@@ -274,14 +274,19 @@ export default function Home() {
 
   return (
     <main className={`${styles.main} ${inter.className}`}>
-      <div className={'container'} id="container">
+      <div className={styles.container} id="container">
         <div className={styles.description}>
           <h1 className={inter.className}>I’m Greg Sarault, a Front End Engineer that dosen’t over-engineer things.</h1>
-          <h2 className={inter.className}>As an experienced developer with unparalleled speed and debugging abilities, I’ve been working as a dev for 10+ years and im faster then anyone you have worked with. I am constantly improving my craft and surroundings while making everyone better around me.</h2>
+          <h2 className={inter.className}>As an experienced developer with unparalleled speed and debugging abilities, I’ve been working as a dev for 10+ years and im faster than anyone you have worked with. I am constantly improving my craft and surroundings while making everyone better around me.</h2>
         </div>
-        <div>
+        <div className={styles.carousel}>
           <blockquote>
-            <p></p>
+            <p>I am super appreciative to be able to work with you. Enjoy just being a fly on the wall and absorbing all the info.</p>
+            <cite>&mdash; Mitch Steimel</cite>
+          </blockquote>
+          <blockquote>
+            <p>I have followed Greg&apos;s career from the beginning and I&apos;m continually impressed with what he brings to the table.</p>
+            <cite>&mdash; Daniel Mall</cite>
           </blockquote>
         </div>
         
