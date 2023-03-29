@@ -282,11 +282,15 @@ export default function Home() {
         <div className={styles.carousel}>
           <blockquote>
             <p>I am super appreciative to be able to work with you. Enjoy just being a fly on the wall and absorbing all the info.</p>
-            <cite>&mdash; Mitch Steimel</cite>
+            <cite>&mdash; Mitch Steimel
+              <p>Southleft</p>
+            </cite>
           </blockquote>
           <blockquote>
             <p>I have followed Greg&apos;s career from the beginning and I&apos;m continually impressed with what he brings to the table.</p>
-            <cite>&mdash; Daniel Mall</cite>
+            <cite>&mdash; Daniel Mall
+              <p>Master of Design Systems</p>
+            </cite>
           </blockquote>
         </div>
         
