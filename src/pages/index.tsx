@@ -62,7 +62,7 @@ export const projects = [
   {
     title: 'Gallagher Design',
     url: 'https://gallagherdesign.com/',
-    desc: 'Had constant comunication with design to hone in the timing and easing of the aniamtions of this site.',
+    desc: 'Had constant comunication with designers to hone in the timing and easing of the aniamtions of this site.',
     tags: [
       {label: 'Wordpress' },
       {label: 'Twig' },
@@ -289,7 +289,7 @@ export default function Home() {
           <blockquote>
             <p>I have followed Greg&apos;s career from the beginning and I&apos;m continually impressed with what he brings to the table.</p>
             <cite>&mdash; Daniel Mall
-              <p>Master of Design Systems</p>
+              <p>Entrepreneur</p>
             </cite>
           </blockquote>
         </div>
