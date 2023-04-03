@@ -2,11 +2,19 @@
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
-import { Kreon } from 'next/font/google'
+import { IBM_Plex_Mono } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import classnames from 'classnames';
 
-const inter = Kreon({ subsets: ['latin'] })
+const inter = IBM_Plex_Mono({
+  subsets: ['latin'],
+  weight: '400'
+})
+
+const interHeavy = IBM_Plex_Mono({
+  subsets: ['latin'],
+  weight: '700'
+})
 export const projects = [
   {
     title: 'Point72',
@@ -22,7 +30,7 @@ export const projects = [
   {
     title: 'Ventures',
     url: 'https://p72.vc/',
-    desc: 'Extensive training with client teaching them a little bit about code the help their editors with making their site unique.',
+    desc: 'Extensive training with client teaching them a little bit about code to help their editors with making their site unique.',
     tags: [
       {label: 'Wordpress' },
       {label: 'Twig' },
@@ -33,7 +41,7 @@ export const projects = [
   {
     title: 'Hyperscale',
     url: 'https://point72hyperscale.com/',
-    desc: 'Quickly put this site together, with the help of awesome design team.',
+    desc: 'Quickly put this site together with the help of an awesome design team.',
     tags: [
       {label: 'Wordpress' },
       {label: 'Twig' },
@@ -44,7 +52,7 @@ export const projects = [
   {
     title: 'Producers Guild of America',
     url: 'https://producersguild.org/',
-    desc: 'Built a Custom integration with salesforce using a url that sends a cookie back to the site allowing members to view protected pages.',
+    desc: 'Built a Custom integration with Salesforce using a URL that sends a cookie back to the site allowing members to view protected pages.',
     tags: [
       {label: 'Wordpress' },
       {label: 'Twig' },
@@ -53,7 +61,7 @@ export const projects = [
   {
     title: 'Twilio',
     url: 'https://www.twilio.com/',
-    desc: 'Learned Python/wagtail in 2 months and worked with an external team to integrate into their system.',
+    desc: 'Learned Python/Wagtail in 2 months and worked with an external team to integrate into their system.',
     tags: [
       {label: 'Wagtail' },
       {label: 'Python' },
@@ -62,7 +70,7 @@ export const projects = [
   {
     title: 'Gallagher Design',
     url: 'https://gallagherdesign.com/',
-    desc: 'Had constant comunication with designers to hone in the timing and easing of the aniamtions of this site.',
+    desc: 'Had constant communication with designers to hone in the timing and easing of the animations of this site.',
     tags: [
       {label: 'Wordpress' },
       {label: 'Twig' },
@@ -72,7 +80,7 @@ export const projects = [
   {
     title: 'Ryan Gootee General Contractors',
     url: 'https://rggc.com/',
-    desc: 'Using the templeting language twig, I was able to get this site up in under 2 months.',
+    desc: 'Using the templating language Twig, I was able to get this site up in under 2 months.',
     tags: [
       {label: 'Wordpress' },
       {label: 'Twig' },
@@ -81,7 +89,7 @@ export const projects = [
   {
     title: 'PetSmart Design System',
     url: 'https://www.npmjs.com/package/@petsmart-ui/sparky',
-    desc: 'A very ARIA accessable design system tested though cromatic and sotrybook interactive testing.',
+    desc: 'A very ARIA accessiblie design system tested though Chromatic and Storybook interactive testing.',
     tags: [
       {label: 'Storybook' },
       {label: 'Design System' },
@@ -91,7 +99,7 @@ export const projects = [
   {
     title: 'Ulta’s Design System',
     url: 'https://www.ulta.com/',
-    desc: 'In 3 months got the Ulta Design team and the development have more conversations with eachother to help enhacnce their desing system',
+    desc: 'In 3 months got the Ulta Design team and the development have more conversations with eachother to help enhance their design system',
     tags: [
       {label: 'Storybook' },
       {label: 'Design System' },
@@ -103,7 +111,7 @@ export const projects = [
     url: 'https://www.pendo.io/',
     desc: 'I did live coding QA sessions with designers and client to help get this design system over the last hurdle.',
     tags: [
-      {label: 'Fractle' },
+      {label: 'Fractal' },
       {label: 'Design System' },
       {label: 'React' },
     ],
@@ -111,7 +119,7 @@ export const projects = [
   {
     title: 'Elevation Oncology',
     url: 'https://elevationoncology.com/',
-    desc: 'Created subtle animations and a custom vertical carousel that progresses based off the timestamps in the background video ( its on the /our-focus/ page',
+    desc: 'Created subtle animations and a custom vertical carousel that progresses based off the timestamps in the background video ( it’s on the /our-focus/ page )',
     tags: [
       {label: 'Wordpress' },
       {label: 'WPEngine' },
@@ -141,7 +149,7 @@ export const projects = [
   {
     title: 'Haruki Murakami',
     url: 'https://www.harukimurakami.com/',
-    desc: 'I had fun building the animations with greensock and angular for the page state transtions.',
+    desc: 'I had fun building the animations with greensock and angular for the page state transitions.',
     tags: [
       {label: 'Wordpress' },
       {label: 'Angular' },
@@ -164,7 +172,7 @@ export const projects = [
     tags: [
       { label: 'Drupal' },
       { label: 'Pantheon' },
-      { label: 'Freelance one the side' },
+      { label: 'Freelance on the side' },
     ],
   },
   {
@@ -179,7 +187,7 @@ export const projects = [
   {
     title: 'Longwood Gardens - New Heights',
     url: 'https://newheights.longwoodgardens.org',
-    desc: 'We used so much Javascript in this site for the responsive interactive hotspots on the map, and story telling line drawing when scrolling down the page.',
+    desc: 'We used so much Javascript in this site for the responsive interactive hotspots on the map, and storytelling line drawing when scrolling down the page.',
     tags: [
       { label: 'Static Site' },
       { label: 'Angular' },
@@ -217,16 +225,16 @@ export const projects = [
   {
     title: 'The Franklin Institute - Leap into Science',
     url: 'http://leap.fi.edu/',
-    desc: 'While full time I worked with another agency to and their client to develop a resouece protal.',
+    desc: 'While full time I worked with another agency and their client to develop a resource portal.',
     tags: [
       { label: 'Drupal' },
-      { label: 'Feelance on the side' },
+      { label: 'Freelance on the side' },
     ],
   },
   {
     title: 'Lapham’s Quarterly',
     url: 'https://www.laphamsquarterly.org/',
-    desc: 'Created fun micro animaions, and gave the client the ability to create custom theming per issue they released.',
+    desc: 'Created fun micro animations, and gave the client the ability to create custom theming per issue they released.',
     tags: [
       { label: 'Drupal' },
       { label: 'React' },
@@ -276,30 +284,10 @@ export default function Home() {
     <main className={`${styles.main} ${inter.className}`}>
       <div className={styles.container} id="container">
         <div className={styles.description}>
-          <h1 className={inter.className}>I’m Greg Sarault, a Front End Engineer that dosen’t over-engineer things.</h1>
-          <h2 className={inter.className}>As an experienced developer with unparalleled speed and debugging abilities, I’ve been working as a dev for 10+ years and im faster than anyone you have worked with. I am constantly improving my craft and surroundings while making everyone better around me.</h2>
-        </div>
-        <div className={styles.carousel}>
-          <blockquote>
-            <p>I am super appreciative to be able to work with you. Enjoy just being a fly on the wall and absorbing all the info.</p>
-            <cite>&mdash; Mitch Steimel
-              <p>Southleft</p>
-            </cite>
-          </blockquote>
-          <blockquote>
-            <p>I have followed Greg&apos;s career from the beginning and I&apos;m continually impressed with what he brings to the table.</p>
-            <cite>&mdash; Daniel Mall
-              <p>Entrepreneur</p>
-            </cite>
-          </blockquote>
-        </div>
-        
-        <div className={styles.description}>
-          <h3>Little bit about me</h3>
-          <p>With experience spanning SAAS-based companies and agencies, I have developed a well-rounded understanding of various architectures. Passionate about highly technical conversations, I am always eager to participate in live coding sessions.</p>
+          <h1 className={inter.className}>I’m <span className={interHeavy.className}>Greg Sarault</span>, a front-end engineer that doesn’t over-engineer his code.</h1>
         </div>
         <div className={styles.intro}>
-          <h3>{`Check out what I've done`}</h3>
+          <h3 className={interHeavy.className}>👇 See for yourself &nbsp;</h3><span>2012-2013</span>
         </div>
         <div className={styles.grid}>
           {projects.map((item, index) => {
@@ -311,7 +299,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   
-                  <h2 className={inter.className}>
+                  <h2 className={interHeavy.className}>
                     {item.title}
                   </h2>
                   <div className={styles.tags}>
@@ -328,6 +316,23 @@ export default function Home() {
               </div>
             )
           })}
+        </div>
+        <div className={styles.description}>
+          <h3 className={interHeavy.className}>More about me</h3>
+          <div>
+            <p>As an experienced developer with unparalleled speed and debugging abilities, I’ve been working as a dev for 10+ years and I’m faster than anyone you have worked with. I am constantly improving my craft and surroundings while making everyone better around me.</p>
+            <p>With experience spanning SaaS-based companies and agencies, I have developed a well-rounded understanding of various architectures. Passionate about highly technical conversations, I am always eager to participate in live coding sessions.</p>
+          </div>
+        </div>
+        <div className={styles.carousel}>
+          <blockquote>
+            <p>&ldquo;I am super appreciative to be able to work with you. Enjoy just being a fly on the wall and absorbing all the info.&rdquo;</p>
+            <cite>&mdash; Mitch Steimel, Software Developer Southleft</cite>
+          </blockquote>
+          <blockquote>
+            <p>&ldquo;I have followed Greg&apos;s career from the beginning and I&apos;m continually impressed with what he brings to the table.&rdquo;</p>
+            <cite>&mdash; Daniel Mall, Founder Design System University</cite>
+          </blockquote>
         </div>
       </div>
       <div>
