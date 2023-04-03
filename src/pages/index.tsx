@@ -283,7 +283,7 @@ export default function Home() {
   return (
     <main className={`${styles.main} ${inter.className}`}>
       <div className={styles.container} id="container">
-        <div className={styles.description}>
+        <div className={styles.hero}>
           <h1 className={inter.className}>I’m <span className={interHeavy.className}>Greg Sarault</span>, a front-end engineer that doesn’t over-engineer his code.</h1>
         </div>
         <div className={styles.intro}>
