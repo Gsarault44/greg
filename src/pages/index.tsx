@@ -287,7 +287,7 @@ export default function Home() {
           <h1 className={inter.className}>I’m <span className={interHeavy.className}>Greg Sarault</span>, a front-end engineer that doesn’t over-engineer his code.</h1>
         </div>
         <div className={styles.intro}>
-          <h3 className={interHeavy.className}>👇 See for yourself &nbsp;</h3><span>2012-2013</span>
+          <h3 className={interHeavy.className}>👇 See for yourself &nbsp;</h3><span>2012-2023</span>
         </div>
         <div className={styles.grid}>
           {projects.map((item, index) => {
@@ -334,6 +334,9 @@ export default function Home() {
             <cite>&mdash; Daniel Mall, Founder Design System University</cite>
           </blockquote>
         </div>
+        <footer className={styles.footer}>
+            <p>@{(new Date().getFullYear())} Greg Sarault. All rights reserved.</p>
+        </footer>
       </div>
       <div>
         {//eslint-disable-next-line @next/next/no-img-element
