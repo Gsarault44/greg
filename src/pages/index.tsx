@@ -254,6 +254,7 @@ export const projects = [
 
 export default function Home() {
   const [showImage1, setShowImage1] = useState(true);
+  console.log("Hiring me will be the best decision you've made.");
 
   useEffect(() => {
     function handleScroll() {
@@ -277,8 +278,6 @@ export default function Home() {
     'show': !showImage1,
     'hide': showImage1
   });
-
-  console.log("Hiring me will be the best decision you've made.")
 
   return (
     <main className={`${styles.main} ${inter.className}`}>
