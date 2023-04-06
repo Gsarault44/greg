@@ -127,13 +127,13 @@ export const projects = [
     ],
   },
   {
-    title: 'Pixelingo',
-    url: 'https://pixelingo.com/',
-    desc: 'Early in my career I spun up a single page with custom nav bar associated with scroll position in under a week.',
+    title: 'SupplyHouse',
+    url: 'https://www.supplyhouse.com/',
+    desc: 'Mentored / coached a core developer learning design systems, now that person is the go to for design systems.',
     tags: [
-      {label: 'HTML' },
-      {label: 'CSS' },
-      {label: 'Javascript' },
+      {label: 'Design Systems' },
+      {label: 'Storybook' },
+      {label: 'Reach' },
     ],
   },
   {
@@ -182,6 +182,16 @@ export const projects = [
     tags: [
       { label: 'Wordpress' },
       { label: 'Design System' },
+    ],
+  },
+  {
+    title: 'Pixelingo',
+    url: 'https://pixelingo.com/',
+    desc: 'Early in my career I spun up a single page with custom nav bar associated with scroll position in under a week.',
+    tags: [
+      {label: 'HTML' },
+      {label: 'CSS' },
+      {label: 'Javascript' },
     ],
   },
   {
