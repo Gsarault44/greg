@@ -114,6 +114,7 @@ export const projects = [
       {label: 'Fractal' },
       {label: 'Design System' },
       {label: 'React' },
+      {label: 'Tailwind' },
     ],
   },
   {
