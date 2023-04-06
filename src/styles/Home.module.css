@@ -10,12 +10,23 @@
   max-width: 100%;
 }
 
+@media (max-width: 768px) {
+  .main {
+    padding-top: 4rem;
+  }
+}
 .hero {
   font-size: 0.85rem;
   margin-bottom: 5rem;
   width: 100%;
   z-index: 2;
   display:inline-grid;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin-bottom: 2rem;
+  }
 }
 
 .description {
@@ -30,17 +41,17 @@
 }
 
 .hero h1 {
-  margin-bottom: 3rem;
   font-size: 4rem;
-  font-size: calc(2rem + 16 * ((100vw - 320px) / 900));
+  font-size: calc(1.75rem + 18 * ((100vw - 320px) / 900));
 }
 
 .description h1 span {
   font-weight: 700;
 }
 
-.description h2 {
-  font-size: calc(1rem + 4 * ((100vw - 320px) / 900));
+.description h3 {
+  font-size: calc(1.2rem + 4 * ((100vw - 320px) / 900));
+  margin-bottom: 1rem;
 }
 
 .description a {
@@ -61,6 +72,17 @@
   display: flex;
   align-items: baseline;
   margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    margin-bottom: 1rem;
+  }
+
+  .description p {
+    font-size: 18px;
+    line-height: 32px;
+  }
 }
 
 .intro h3 {
@@ -90,6 +112,12 @@
   width: 100%;
   padding: 4rem 6rem;
   background-color: rgba(var(--callout-rgb), 0.2);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2.2rem 3rem;
+  }
 }
 
 .code {
@@ -216,6 +244,12 @@
 
 .carousel blockquote cite {
   font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .carousel blockquote {
+    margin: 0 2rem 2rem;
+  }
 }
 
 /* Enable hover only on non-touch devices */
