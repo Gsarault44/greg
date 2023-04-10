@@ -344,6 +344,10 @@ export default function Home() {
             <cite>&mdash; Daniel Mall, Founder Design System University</cite>
           </blockquote>
         </div>
+        <div className={styles.contact}>
+          <p>Always up for a chat reach out <a href="mailto:gregsarault@gmail.com">here</a>.</p>
+          <p>Or Check out my <a href="/Resume.pdf">Resume</a>.</p>
+        </div>
         <footer className={styles.footer}>
             <p>@{(new Date().getFullYear())} Greg Sarault. All rights reserved.</p>
         </footer>

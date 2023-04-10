@@ -107,6 +107,19 @@
   } 
 }
 
+.contact {
+  margin-bottom: 3rem;
+}
+
+.contact a {
+  text-decoration: underline;
+}
+
+.contact a:hover {
+  text-decoration: none;
+}
+
+
 .footer {
   display: flex;
   width: 100%;
