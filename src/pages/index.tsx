@@ -1,12 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from 'react';
-import Head from 'next/head'
-import Image from 'next/image'
 import { IBM_Plex_Mono } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import classnames from 'classnames';
 
-const inter = IBM_Plex_Mono({
+const inter =   ({
   subsets: ['latin'],
   weight: '400'
 })
@@ -16,6 +14,17 @@ const interHeavy = IBM_Plex_Mono({
   weight: '700'
 })
 export const projects = [
+  {
+    title: 'Rio Laz Vegas',
+    url: 'https://www.riolasvegas.com/',
+    desc: 'Had a lot of fun building out the animations and the complex theming colors for each section and content type.',
+    tags: [
+      {label: 'Wordpress' },
+      {label: 'Twig' },
+      {label: 'Next' },
+      {label: 'Foust' },
+    ],
+  },
   {
     title: 'Point72',
     url: 'https://point72.com',
@@ -112,9 +121,9 @@ export const projects = [
     desc: 'I did live coding QA sessions with designers and client to help get this design system over the last hurdle.',
     tags: [
       {label: 'Fractal' },
-      {label: 'Design System' },
       {label: 'React' },
       {label: 'Tailwind' },
+      {label: 'Design System' },
     ],
   },
   {
