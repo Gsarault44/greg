@@ -98,7 +98,7 @@ export const projects = [
   },
   {
     title: 'PetSmart Design System',
-    url: 'https://www.npmjs.com/package/@petsmart-ui/sparky',
+    url: 'https://main--60abd9d5d5713100398da897.chromatic.com/?path=/docs/documentation-guidelines--code-guidelines',
     desc: 'A very ARIA accessiblie design system tested though Chromatic and Storybook interactive testing.',
     tags: [
       {label: 'Storybook' },
