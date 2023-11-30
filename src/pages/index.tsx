@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from 'react';
+import { Inter } from 'next/font/google';
 import { IBM_Plex_Mono } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import classnames from 'classnames';
 
-const inter =   ({
+const inter =   IBM_Plex_Mono({
   subsets: ['latin'],
   weight: '400'
 })
@@ -15,9 +16,9 @@ const interHeavy = IBM_Plex_Mono({
 })
 export const projects = [
   {
-    title: 'Rio Laz Vegas',
+    title: 'Rio Las Vegas',
     url: 'https://www.riolasvegas.com/',
-    desc: 'Had a lot of fun building out the animations and the complex theming colors for each section and content type.',
+    desc: 'Had a lot of fun building the animations and the complex theming colors for each section and content type.',
     tags: [
       {label: 'Wordpress' },
       {label: 'Twig' },
@@ -28,7 +29,7 @@ export const projects = [
   {
     title: 'Point72',
     url: 'https://point72.com',
-    desc: 'Worked very closely with Designer, Project manager, and Client to fine tune animations and site tone and feel.',
+    desc: 'Worked very closely with Designers, Project manager, and Client to fine tune animations and site tone and feel.',
     tags: [
       {label: 'Wordpress' },
       {label: 'Twig' },
@@ -39,7 +40,7 @@ export const projects = [
   {
     title: 'Ventures',
     url: 'https://p72.vc/',
-    desc: 'Extensive training with client teaching them a little bit about code to help their editors with making their site unique.',
+    desc: 'Extensive training with client, teaching them a little bit about code to help their editors with making their site unique.',
     tags: [
       {label: 'Wordpress' },
       {label: 'Twig' },
@@ -47,17 +48,17 @@ export const projects = [
       {label: 'Kinsta' },
     ],
   },
-  {
-    title: 'Hyperscale',
-    url: 'https://point72hyperscale.com/',
-    desc: 'Quickly put this site together with the help of an awesome design team.',
-    tags: [
-      {label: 'Wordpress' },
-      {label: 'Twig' },
-      {label: 'Multisite' },
-      {label: 'Kinsta' },
-    ],
-  },
+  // {
+  //   title: 'Hyperscale',
+  //   url: 'https://point72hyperscale.com/',
+  //   desc: 'Quickly put this site together with the help of an awesome design team.',
+  //   tags: [
+  //     {label: 'Wordpress' },
+  //     {label: 'Twig' },
+  //     {label: 'Multisite' },
+  //     {label: 'Kinsta' },
+  //   ],
+  // },
   {
     title: 'Producers Guild of America',
     url: 'https://producersguild.org/',
@@ -303,7 +304,7 @@ export default function Home() {
     <main className={`${styles.main} ${inter.className}`}>
       <div className={styles.container} id="container">
         <div className={styles.hero}>
-          <h1 className={inter.className}>I’m <span className={interHeavy.className}>Greg Sarault</span>, a front-end engineer that doesn’t over-engineer his code.</h1>
+          <h1 className={`${inter.className}`}>I’m <span className={interHeavy.className}>Greg Sarault</span>, a front-end engineer that doesn’t over-engineer his code.</h1>
         </div>
         <div className={styles.intro}>
           <h3 className={interHeavy.className}>👇 See for yourself &nbsp;</h3><span>2012-2023</span>
